@@ -30,7 +30,6 @@ Text-To-Text/
 
 Clone the repository:
 
-git clone https://github.com/yourusername/Text-To-Text.git
 cd Text-To-Text
 
 
