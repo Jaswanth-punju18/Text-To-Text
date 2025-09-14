@@ -1,0 +1,28 @@
+import requests
+import json
+
+response = requests.post(
+  url="https://openrouter.ai/api/v1/chat/completions",
+  headers={
+    "Authorization": f"Bearer {api}",
+    "Content-Type": "application/json",
+  
+   
+  },
+  data=json.dumps({
+    "model": "deepseek/deepseek-chat-v3.1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What is the meaning of beautiful?"
+      }
+    ],
+    
+  })
+)
+  
+response
+
+type(response)
+
+response.json()
